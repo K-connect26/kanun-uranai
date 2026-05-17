@@ -549,7 +549,7 @@ function diagnose() {
   const score=calcScore(ln,m,d);
   const zodiac=getZodiac(m,d);
 
-  document.getElementById('resultName').textContent=`${name}さん（${zodiac} ／ ${y}年生まれ）`;
+  document.getElementById('resultName').textContent=`${name}さん`;
   document.getElementById('scoreNum').textContent=score;
   setTimeout(()=>{document.getElementById('scoreBar').style.width=score+'%';},200);
   const scoreMsg=score>=80?'今年は金運が強く出ています。積極的な行動が吉です。':score>=70?'安定した金運です。着実に動くことで成果が出やすい年です。':'今こそ学びと自己投資が金運を引き上げる最高のタイミングです。新しい知識を取り入れた人が来年大きく飛躍します。';
